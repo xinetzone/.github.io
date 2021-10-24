@@ -3,7 +3,7 @@
 
 .. post:: Oct 24, 2021
    :tags: atag
-   :author: Xinwei Liu
+   :author: 
 
 First Post
 ==========

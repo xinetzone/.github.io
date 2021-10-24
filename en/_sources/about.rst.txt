@@ -1,8 +1,7 @@
-
 .. _about:
 
-About Xinwei Liu
+关于我
 ============================
 
-The world wants to know more about you.
+
 
