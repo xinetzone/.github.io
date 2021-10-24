@@ -1,186 +1,182 @@
 #!/usr/bin/env python
 
-
-# xinetzone build configuration file, created by
-# `ablog start` on Sun Oct 24 22:28:16 2021.
+# xinetzone 构建的配置文件，
+# 由 `ablog start` 在 2021 年 10 月 24 日星期日 22:28:16 创建。
 #
-# Note that not all possible configuration values are present in this file.
-# All configuration values have a default; values that are commented out
-# serve to show the default.
+# 注意不是所有可能的配置值都出现在这个文件中。
+# 所有的配置值都有一个默认值；被注释掉的值是用来显示默认值的。
 
 import os
 import sys
 import ablog
 import alabaster
 
-# -- General ABlog Options ----------------------------------------------------
+# -- ABlog 的常规选项 ----------------------------------------------------
 
 # A path relative to the configuration directory for blog archive pages.
-# blog_path = 'blog'
+# 一个相对于配置目录的博客档案页的路径。
+blog_path = 'blog'
 
 # The "title" for the blog, used in active pages.  Default is ``'Blog'``.
+# 博客的 “标题”，在活动页面中使用。默认为 ``'Blog'``。
 blog_title = "xinetzone Blog"
 
-# Base URL for the website, required for generating feeds.
-# e.g. blog_baseurl = "http://example.com/"
+# 网站的基本 URL，生成 feeds 时需要。
+# 例如，blog_baseurl = "http://example.com/"
 blog_baseurl = "https://xinetzone.github.io/"
 
-# Choose to archive only post titles. Archiving only titles can speed
-# up project building.
+# 选择只对帖子标题进行存档。只归档标题可以加快项目建设的速度。
 # blog_archive_titles = False
 
-# -- Blog Authors, Languages, and Locations -----------------------------------
+# --    博客作者、语言和位置 -------------------------------------------------
 
-# A dictionary of author names mapping to author full display names and
-# links. Dictionary keys are what should be used in ``post`` directive
-# to refer to the author.  Default is ``{}``.
+# 一个作者名字的字典，映射到作者的完整显示名称和链接。
+# 字典的键值应该在 ``post`` 指令中使用，以指代作者。默认是 ``{}``。
 blog_authors = {
-    "Xinwei Liu": ("Xinwei Liu", None),
+    "lxw": ("刘新伟", None),
 }
 
+# 语言代码名称的字典，映射到这些语言的完整显示名称和链接。
+# 类似于 :confval:`blog_authors`，
+# 字典的键应该在 `post` 指令中使用，以指代位置。默认是 `{}`。
+blog_languages = {
+    'zh': ('Chinese', None),
+    'en': ('English', None)
+}
 
-# A dictionary of language code names mapping to full display names and
-# links of these languages. Similar to :confval:`blog_authors`, dictionary
-# keys should be used in ``post`` directive to refer to the locations.
-# Default is ``{}``.
-# blog_languages = {
-#    'en': ('English', None),
-# }
+# 一个位置名称的字典，映射到这些位置的完整显示名称和链接。
+# 类似于 :confval:`blog_authors`，字典的键应该在 ``post`` 指令中使用，以引用位置。
+# 默认是 ``{}``.
+blog_locations = {
+    # 'Earth': ('The Blue Planet', 'https://en.wikipedia.org/wiki/Earth'),
+    "daobook": ("Daobook", "https://daobook.github.io")
+}
 
+# -- 博客帖子相关 --------------------------------------------------------
 
-# A dictionary of location names mapping to full display names and
-# links of these locations. Similar to :confval:`blog_authors`, dictionary
-# keys should be used in ``post`` directive to refer to the locations.
-# Default is ``{}``.
-# blog_locations = {
-#    'Earth': ('The Blue Planet', 'https://en.wikipedia.org/wiki/Earth),
-# }
-
-# -- Blog Post Related --------------------------------------------------------
-
-# Format date for a post.
+# 帖子的日期格式。
 # post_date_format = '%%b %%d, %%Y'
 
-# Number of paragraphs (default is ``1``) that will be displayed as an excerpt
-# from the post. Setting this ``0`` will result in displaying no post excerpt
-# in archive pages.  This option can be set on a per post basis using
+# 将作为文章摘录显示的段落数（默认为 ``1``）。 
+# 设置此 ``0`` 将导致在存档页面中不显示帖子摘录。可以使用每个帖子设置此选项
 # post_auto_excerpt = 1
 
-# Index of the image that will be displayed in the excerpt of the post.
-# Default is ``0``, meaning no image.  Setting this to ``1`` will include
-# the first image, when available, to the excerpt.  This option can be set
-# on a per post basis using :rst:dir:`post` directive option ``image``.
-# post_auto_image = 0
+# 图片的索引，将显示在文章的摘录中。
+# 默认是 ``0``，意味着没有图片。
+# 设置为 ``1`` 将包括第一张图片（如果有的话）到摘录中。
+# 这个选项可以在每个帖子的基础上使用 :rst:dir:`post` 指令选项 ``image`` 来设置。
+post_auto_image = 1
 
-# Number of seconds (default is ``5``) that a redirect page waits before
-# refreshing the page to redirect to the post.
+# 重定向页面在刷新页面之前等待的秒数（默认为 ``5``），以重定向到帖子。
 # post_redirect_refresh = 5
 
-# When ``True``, post title and excerpt is always taken from the section that
-# contains the :rst:dir:`post` directive, instead of the document. This is the
-# behavior when :rst:dir:`post` is used multiple times in a document. Default
-# is ``False``.
+# 当 ``True`` 时，帖子的标题和摘要总是从包含 :rst:dir:`post` 指令的部分，
+# 而不是从文档中提取。这是当 :rst:dir:`post` 在一个文档中被多次使用时的行为。
+# 默认是`False`。
 # post_always_section = False
 
-# When ``False``, the :rst:dir:`orphan` directive is not automatically set
-# for each post. Without this directive, Sphinx will warn about posts that
-# are not explicitly referenced via another document. :rst:dir:`orphan` can
-# be set on a per-post basis as well if this is false. Default is ``True``.
+# 当 ``False`` 时，:rst:dir:`orphan` 指令不会为每个帖子自动设置。
+# 如果没有这个指令，Sphinx 会对没有通过另一个文件明确引用的帖子发出警告。
+#  :rst:dir:`orphan` 如果是 false，也可以在每个帖子的基础上设置。
+# 默认是`True'。
 # post_auto_orphan = True
 
-# -- ABlog Sidebars -------------------------------------------------------
+# -- ABlog 侧边栏 -------------------------------------------------------
 
-# There are seven sidebars you can include in your HTML output.
-# postcard.html provides information regarding the current post.
-# recentposts.html lists most recent five posts. Others provide
-# a link to a archive pages generated for each tag, category, and year.
-# In addition, there are authors.html, languages.html, and locations.html
-# sidebars that link to author and location archive pages.
+# 在你的 HTML 输出中，有七个侧边栏可以包括。postcard.html 提供有关当前帖子的信息。
+# recentposts.html 列出最近的五个帖子。
+# 其他的侧边栏提供了一个链接到为每个标签、类别和年份生成的档案页。
+# 此外，还有 authors.html, languages.html, and locations.html 侧边栏，
+# 链接到作者和位置的档案页。
 html_sidebars = {
-    '**': [ 'about.html',
-            'postcard.html', 'navigation.html',
-            'recentposts.html', 'tagcloud.html',
-            'categories.html',  'archives.html',
-            'searchbox.html',
-            ],
-    }
+    '**': ['about.html',
+           'postcard.html', 'navigation.html',
+           'recentposts.html', 'tagcloud.html',
+           'categories.html',  'archives.html',
+           'searchbox.html',
+           ],
+}
 
-# -- Blog Feed Options --------------------------------------------------------
+# -- Blog Feed 选项 --------------------------------------------------------
 
 # Turn feeds by setting :confval:`blog_baseurl` configuration variable.
 # Choose to create feeds per author, location, tag, category, and year,
 # default is ``False``.
-# blog_feed_archives = False
+# 通过设置 :confval:`blog_baseurl` 配置变量来转动 feeds。
+# 选择按作者、地点、标签、类别和年份创建 feeds，默认为 ``False``。
+blog_feed_archives = True
 
-# Choose to display full text in blog feeds, default is ``False``.
+# 选择在博客 feeds 中显示全文，默认为 ``False``。
 # blog_feed_fulltext = False
 
-# Blog feed subtitle, default is ``None``.
+# 博客 feed 的副标题，默认为 ``None``。
 # blog_feed_subtitle = None
 
-# Choose to feed only post titles, default is ``False``.
+# 选择只 feed 文章标题，默认为 ``False``。
 # blog_feed_titles = False
 
 # Specify custom Jinja2 templates for feed entry elements:
 #     `title`, `summary`, or `content`
-# For example, to add an additional feed for posting to social media:
+# 为饲料条目元素指定自定义的 Jinja2 模板：
+# `title`、`summary` 或 `content`
+# 例如，添加一个额外的 feed，用于发布到社交媒体：
 # blog_feed_templates = {
-#     # Use defaults, no templates
+#     # 使用默认值，不使用模板
 #     "atom": {},
-#     # Create content text suitable posting to social media
+#     # 创建适合在社交媒体上发布的内容文本
 #     "social": {
-#         # Format tags as hashtags and append to the content
+#         # 将 tags 格式化为 hashtags，并附加到内容上
 #         "content": "{ title }{% for tag in post.tags %}"
 #         " #{ tag.name|trim()|replace(' ', '') }"
 #         "{% endfor %}",
 #     },
 # }
-# Default: Create one `atom.xml` feed without any templates
+# 默认情况下。创建一个没有任何模板的 `atom.xml` feed
 # blog_feed_templates = {"atom": {} }
 
-# Specify number of recent posts to include in feeds, default is ``None``
-# for all posts.
+# 指定在 feeds 中包含的最近帖子的数量，默认为所有帖子都是 ``None``。
 # blog_feed_length = None
 
-# -- Font-Awesome Options -----------------------------------------------------
+# -- Font-Awesome 选项 -----------------------------------------------------
 
-# ABlog templates will use of Font Awesome icons if one of the following
-# is ``True``
+# ABlog 模板将使用 Font Awesome 图标，如果以下情况之一是 ``True``的话：
 
-# Link to `Font Awesome`_ at `Bootstrap CDN`_ and use icons in sidebars
-# and post footers.  Default: ``None``
+# 链接到 `Bootstrap CDN`_ 的 `Font Awesome`_，在侧边栏和文章页脚使用图标。
+# 默认: ``None``.
 # fontawesome_link_cdn = None
 
-# Sphinx_ theme already links to `Font Awesome`_.  Default: ``False``
+# Sphinx_ 主题已经链接到 `Font Awesome`_。 
+# 默认值：``False``
 # fontawesome_included = False
 
 # Alternatively, you can provide the path to `Font Awesome`_ :file:`.css`
 # with the configuration option: fontawesome_css_file
 # Path to `Font Awesome`_ :file:`.css` (default is ``None``) that will
 # be linked to in HTML output by ABlog.
+# 或者，你可以用配置选项 fontawesome_css_file 提供 `Font Awesome`_ :file:`.css` 的路径。
+# （默认是`None`），它将被 ABlog 在 HTML 输出中链接到。
 # fontawesome_css_file = None
 
-# -- Disqus Integration -------------------------------------------------------
+# -- Disqus 集成 -------------------------------------------------------
 
-# You can enable Disqus_ by setting ``disqus_shortname`` variable.
-# Disqus_ short name for the blog.
+# 你可以通过设置 ``disqus_shortname`` 变量来启用 Discuz_。
+# Disqus_ 是博客的短名称。
 # disqus_shortname = None
 
-# Choose to disqus pages that are not posts, default is ``False``.
+# 选择 disqus 是非帖子的页面，默认为 ``False``。
 # disqus_pages = False
 
-# Choose to disqus posts that are drafts (without a published date),
-# default is ``False``.
+# 选择将 disqus 的帖子作为草稿（没有发布日期）。
+# 默认为 ``False``。
 # disqus_drafts = False
 
-# -- Sphinx Options -----------------------------------------------------------
+# -- Sphinx 选项 -----------------------------------------------------------
 
-# If your project needs a minimal Sphinx version, state it here.
-needs_sphinx = '1.2'
+# 如果你的项目需要一个最小的 Sphinx 版本，在这里说明。
+needs_sphinx = '1.6'
 
-# Add any Sphinx extension module names here, as strings. They can be
-# extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
-# ones.
+# 在这里添加任何 Sphinx 插件模块的名字，以字符串的形式。
+# 它们可以是 Sphinx 自带的插件（命名为 `sphinx.ext.*`）或你自定义的。
 extensions = [
     'sphinx.ext.extlinks',
     'sphinx.ext.intersphinx',
@@ -189,19 +185,19 @@ extensions = [
     'ablog',
 ]
 
-# Add any paths that contain templates here, relative to this directory.
+# 相对于这个目录，添加任何包含模板的路径。
 templates_path = ["_templates", ablog.get_html_templates_path()]
 
-# The suffix(es) of source filenames.
+# 源文件名的后缀。
 source_suffix = ".rst"
 
-# The encoding of source files.
+# 源文件的编码方式。
 # source_encoding = 'utf-8-sig'
 
-# The master toctree document.
+# 主 toctree 文档。
 master_doc = "index"
 
-# General information about the project.
+# 项目的一般信息
 project = "xinetzone"
 copyright = "2021, Xinwei Liu"
 author = "Xinwei Liu"
@@ -209,31 +205,31 @@ author = "Xinwei Liu"
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
+# 你所记录的项目的版本信息，作为 |version| 和 |release| 的替代，
+# 也用于整个构建的文档的其他地方中使用。
 #
-# The short X.Y version.
-version = ""
-# The full version, including alpha/beta/rc tags.
-release = ""
+# 简短的 X.Y 版本。
+version = "0.0"
+# 完整版本，包括 alpha/beta/rc 标签。
+release = "alpha"
 
-# The language for content autogenerated by Sphinx. Refer to documentation
-# for a list of supported languages.
+# 由 Sphinx 自动生成的内容的语言。支持的语言列表请参考文档。
 #
-# This is also used if you do content translation via gettext catalogs.
-# Usually you set "language" from the command line for these cases.
-language = "en"
+# 如果你通过 gettext catalogs 做内容翻译，也会用到这个。
+# 通常你在这些情况下从命令行设置 ``language``。
+language = "zh_CN"
 
-# There are two options for replacing |today|: either, you set today to some
-# non-false value, then it is used:
+# 替换 |today| 有两种选择：一种是，你把 today 设置为某个非 false 的值，
+# 然后就用它：
 # today = ''
-# Else, today_fmt is used as the format for a strftime call.
+# 否则，today_fmt 被用作调用 strftime 的格式。
 # today_fmt = '%%B %%d, %%Y'
 
-# List of patterns, relative to source directory, that match files and
-# directories to ignore when looking for source files.
+# 模式列表，相对于源目录，匹配文件和目录的列表，
+# 这些文件和目录在寻找源文件时要被忽略。
 exclude_patterns = [""]
 
-# The reST default role (used for this markup: `text`) to use for all
-# documents.
+# 用于所有文档的 reST 默认角色（用于此标记：`text`）。
 # default_role = None
 
 # If true, '()' will be appended to :func: etc. cross-reference text.
@@ -343,8 +339,8 @@ html_static_path = ["_static"]
 # Language to be used for generating the HTML full-text search index.
 # Sphinx supports the following languages:
 #   'da', 'de', 'en', 'es', 'fi', 'fr', 'hu', 'it', 'ja'
-#   'nl', 'no', 'pt', 'ro', 'ru', 'sv', 'tr'
-# html_search_language = 'en'
+#   'nl', 'no', 'pt', 'ro', 'ru', 'sv', 'tr', 'zh
+html_search_language = 'zh'
 
 # A dictionary with options for the search language support, empty by default.
 # Now only 'ja' uses this config value
@@ -356,5 +352,3 @@ html_static_path = ["_static"]
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = "xinetzonedoc"
-
-
