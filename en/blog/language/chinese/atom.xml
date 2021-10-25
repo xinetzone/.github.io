@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://xinetzone.github.io/</id>
+  <title>xinetzone Blog - Posts in Chinese</title>
+  <updated>2021-10-25T11:53:00.822833+00:00</updated>
+  <link href="https://xinetzone.github.io/"/>
+  <link href="https://xinetzone.github.io/blog/language/chinese/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.org/" version="0.10.20">ABlog</generator>
+  <entry>
+    <id>https://xinetzone.github.io/posts/ablog.html</id>
+    <title>ABlog 简介</title>
+    <updated>2021-10-24T00:00:00+00:00</updated>
+    <author>
+      <name>刘新伟</name>
+    </author>
+    <content type="html">&lt;p&gt;ABlog 是一个 Sphinx 插件，可以将任何文档或个人网站项目转换为一个成熟的博客。&lt;/p&gt;
+</content>
+    <link href="https://xinetzone.github.io/posts/ablog.html" rel="alternate"/>
+    <summary>ABlog 是一个 Sphinx 插件，可以将任何文档或个人网站项目转换为一个成熟的博客。</summary>
+    <category term="ABlog" label="ABlog"/>
+    <published>2021-10-24T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://xinetzone.github.io/release/v0.1.html</id>
+    <title>发布 xinetzone v0.1</title>
+    <updated>2021-10-25T00:00:00+00:00</updated>
+    <author>
+      <name>刘新伟</name>
+    </author>
+    <link href="https://xinetzone.github.io/release/v0.1.html" rel="alternate"/>
+    <category term="xinetzone" label="xinetzone"/>
+    <published>2021-10-25T00:00:00+00:00</published>
+  </entry>
+</feed>

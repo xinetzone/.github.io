@@ -2,27 +2,33 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh_CN">
   <id>https://xinetzone.github.io/</id>
   <title>xinetzone Blog - Posted in 2021</title>
-  <updated>2021-10-24T16:54:53.550644+00:00</updated>
+  <updated>2021-10-25T11:52:59.742753+00:00</updated>
   <link href="https://xinetzone.github.io/"/>
   <link href="https://xinetzone.github.io/blog/2021/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.20">ABlog</generator>
   <entry>
-    <id>https://xinetzone.github.io/first-post.html</id>
-    <title>First Post</title>
+    <id>https://xinetzone.github.io/posts/ablog.html</id>
+    <title>ABlog 简介</title>
     <updated>2021-10-24T00:00:00+00:00</updated>
-    <content type="html">&lt;p&gt;World, hello again! This very first paragraph of the post will be used
-as excerpt in archives and feeds. Find out how to control how much is shown
-in &lt;a class="reference external" href="https://ablog.readthedocs.org/manual/post-excerpts-and-images/"&gt;Post Excerpts and Images&lt;/a&gt;. Remember
-that you can refer to posts by file name, e.g. &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;:ref:`first-post`&lt;/span&gt;&lt;/code&gt; results
-in &lt;a class="reference internal" href="../first-post.html#first-post"&gt;&lt;span class="std std-ref"&gt;First Post&lt;/span&gt;&lt;/a&gt;. Find out more at &lt;a class="reference external" href="https://ablog.readthedocs.org/manual/cross-referencing-blog-pages/"&gt;Cross-Referencing Blog Pages&lt;/a&gt;.&lt;/p&gt;
+    <author>
+      <name>刘新伟</name>
+    </author>
+    <content type="html">&lt;p&gt;ABlog 是一个 Sphinx 插件，可以将任何文档或个人网站项目转换为一个成熟的博客。&lt;/p&gt;
 </content>
-    <link href="https://xinetzone.github.io/first-post.html" rel="alternate"/>
-    <summary>World, hello again! This very first paragraph of the post will be used
-as excerpt in archives and feeds. Find out how to control how much is shown
-in Post Excerpts and Images. Remember
-that you can refer to posts by file name, e.g. :ref:`first-post` results
-in first-post. Find out more at Cross-Referencing Blog Pages.</summary>
-    <category term="atag" label="atag"/>
+    <link href="https://xinetzone.github.io/posts/ablog.html" rel="alternate"/>
+    <summary>ABlog 是一个 Sphinx 插件，可以将任何文档或个人网站项目转换为一个成熟的博客。</summary>
+    <category term="ABlog" label="ABlog"/>
     <published>2021-10-24T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://xinetzone.github.io/release/v0.1.html</id>
+    <title>发布 xinetzone v0.1</title>
+    <updated>2021-10-25T00:00:00+00:00</updated>
+    <author>
+      <name>刘新伟</name>
+    </author>
+    <link href="https://xinetzone.github.io/release/v0.1.html" rel="alternate"/>
+    <category term="xinetzone" label="xinetzone"/>
+    <published>2021-10-25T00:00:00+00:00</published>
   </entry>
 </feed>

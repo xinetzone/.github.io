@@ -13,6 +13,7 @@
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/translations.js"></script>
+    <link rel="shortcut icon" href="_static/page-logo.jfif"/>
     <link rel="author" title="关于这些文档" href="about.html" />
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
@@ -30,6 +31,12 @@
   title="xinetzone Blog"
 />
  
+<link
+  rel="stylesheet"
+  href="_static/css/font-awesome.css"
+  type="text/css"
+/>
+
 <style type="text/css">
   ul.ablog-archive {
     list-style: none;
@@ -66,15 +73,16 @@
           <div class="body" role="main">
              <div class="section" id="id1">
 <h1>上善若水<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
-<p>更多关于我的信息见：<a class="reference internal" href="about.html#about"><span class="std std-ref">关于我</span></a>。</p>
+<a class="reference external image-reference" href="https://xinetzone.github.io"><img alt="https://badges.gitter.im/xinetzone/blogs.svg/?version=latest" src="https://badges.gitter.im/xinetzone/blogs.svg/?version=latest" /></a>
+<a class="reference external image-reference" href="https://github.com/xinetzone/xinetzone.github.io/issues"><img alt="https://img.shields.io/github/issues/xinetzone/xinetzone.github.io" src="https://img.shields.io/github/issues/xinetzone/xinetzone.github.io" /></a>
+<a class="reference external image-reference" href="https://github.com/xinetzone/xinetzone.github.io/forks"><img alt="https://img.shields.io/github/forks/xinetzone/xinetzone.github.io" src="https://img.shields.io/github/forks/xinetzone/xinetzone.github.io" /></a>
+<a class="reference external image-reference" href="https://github.com/xinetzone/xinetzone.github.io/stargazers"><img alt="https://img.shields.io/github/stars/xinetzone/xinetzone.github.io" src="https://img.shields.io/github/stars/xinetzone/xinetzone.github.io" /></a>
+<img alt="https://img.shields.io/github/repo-size/xinetzone/xinetzone.github.io.svg" src="https://img.shields.io/github/repo-size/xinetzone/xinetzone.github.io.svg" /><p>更多关于我的信息见：<a class="reference internal" href="about.html#about"><span class="std std-ref">关于我</span></a>。</p>
 <p>以下是最近的帖子列表：</p>
-<ul class="postlist-style-none postlist">
-<li><p>24 October - <a class="reference internal" href="first-post.html">First Post</a></p>
-<p>World, hello again! This very first paragraph of the post will be used
-as excerpt in archives and feeds. Find out how to control how much is shown
-in <a class="reference external" href="https://ablog.readthedocs.org/manual/post-excerpts-and-images/">Post Excerpts and Images</a>. Remember
-that you can refer to posts by file name, e.g. <code class="docutils literal notranslate"><span class="pre">:ref:`first-post`</span></code> results
-in <a class="reference internal" href="first-post.html#first-post"><span class="std std-ref">First Post</span></a>. Find out more at <a class="reference external" href="https://ablog.readthedocs.org/manual/cross-referencing-blog-pages/">Cross-Referencing Blog Pages</a>.</p>
+<ul class="postlist-style-circle postlist">
+<li><p>25 October - <a class="reference internal" href="release/v0.1.html">发布 xinetzone v0.1</a></p></li>
+<li><p>24 October - <a class="reference internal" href="posts/ablog.html">ABlog 简介</a></p>
+<p>ABlog 是一个 Sphinx 插件，可以将任何文档或个人网站项目转换为一个成熟的博客。</p>
 </li>
 </ul>
 <div class="toctree-wrapper compound">
@@ -91,6 +99,9 @@ in <a class="reference internal" href="first-post.html#first-post"><span class="
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="#">
+              <img class="logo" src="_static/logo.jpg" alt="Logo"/>
+            </a></p>
 <h1 class="logo"><a href="#">xinetzone</a></h1>
 
 
@@ -103,17 +114,24 @@ in <a class="reference internal" href="first-post.html#first-post"><span class="
 <h3>导航</h3>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="about.html">关于我</a></li>
+<li class="toctree-l1"><a class="reference internal" href="drafts/index.html">缓存区</a></li>
 </ul>
 
 
 <h3>
-  <a href="blog.html">最近发布的帖子</a>
+  <a href="blog.html">最近帖子</a>
 </h3>
 <ul>
    
   <li>
-    <a href="first-post.html"
-      >24 October - First Post</a
+    <a href="release/v0.1.html"
+      >25 October - 发布 xinetzone v0.1</a
+    >
+  </li>
+  
+  <li>
+    <a href="posts/ablog.html"
+      >24 October - ABlog 简介</a
     >
   </li>
   
@@ -154,18 +172,37 @@ in <a class="reference internal" href="first-post.html#first-post"><span class="
 <ul class="ablog-cloud">
    
   <li class="ablog-cloud ablog-cloud-3">
-    <a href="blog/tag/atag.html">atag</a>
+    <a href="blog/tag/ablog.html">ABlog</a>
+  </li>
+    
+  <li class="ablog-cloud ablog-cloud-3">
+    <a href="blog/tag/xinetzone.html">xinetzone</a>
   </li>
    
 </ul>
 
 <h3>
-  <a href="blog/archive.html">档案</a>
+  <a href="blog/category.html">类别</a>
 </h3>
 <ul>
    
   <li>
-    <a href="blog/2021.html">2021 (1)</a>
+    <a href="blog/category/%E5%8F%91%E5%B8%83.html">发布 (1)</a>
+  </li>
+    
+  <li>
+    <a href="blog/category/%E6%89%8B%E5%86%8C.html">手册 (1)</a>
+  </li>
+   
+</ul>
+
+<h3>
+  <a href="blog/archive.html">归档</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="blog/2021.html">2021 (2)</a>
   </li>
    
 </ul>

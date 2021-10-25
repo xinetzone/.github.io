@@ -1,0 +1,12 @@
+.. post:: Oct 25, 2021
+   :tags: xinetzone
+   :author: lxw
+   :category: 发布
+   :language: zh
+
+========================
+发布 xinetzone v0.1
+========================
+
+
+
