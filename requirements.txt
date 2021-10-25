@@ -2,3 +2,4 @@ Sphinx>=4.2
 sphinx-book-theme
 sphinx-intl
 ablog
+graphviz

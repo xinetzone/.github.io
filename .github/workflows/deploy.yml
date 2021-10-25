@@ -20,7 +20,13 @@ jobs:
 
       - name: Install dependencies
         run: |
+          python setup.py install
           pip install -r requirements.txt
+          conda install -c conda-forge pandoc
+          conda install -c conda-forge ipython
+          pip install sphinxcontrib-websupport
+          sudo apt update
+          sudo apt install -y graphviz
 
       - name: Build the book
         run: |

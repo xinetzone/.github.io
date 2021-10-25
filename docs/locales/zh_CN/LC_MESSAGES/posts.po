@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, Xinwei Liu
+# This file is distributed under the same license as the xinetzone package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: xinetzone 0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-25 14:14+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../posts/ablog.rst:12
+msgid "ABlog 简介"
+msgstr ""
+
+#: ../../posts/ablog.rst:14
+msgid "ABlog 是一个 Sphinx 插件，可以将任何文档或个人网站项目转换为一个成熟的博客，具有："
+msgstr ""
+
+#: ../../posts/ablog.rst:16
+msgid ":ablog:`Atom feeds <blog/atom.xml>`"
+msgstr ""
+
+#: ../../posts/ablog.rst:17
+msgid ":ablog:`档案页 <blog/archive.html>`"
+msgstr ""
+
+#: ../../posts/ablog.rst:18
+msgid ":ablog:`博客侧边栏 <manual/ablog-configuration-options.html#blog-sidebars>`"
+msgstr ""
+
+#: ../../posts/ablog.rst:19
+msgid ""
+":ablog:`Disqus 集成<manual/ablog-configuration-options.html#disqus-"
+"integration>`"
+msgstr ""
+
+#: ../../posts/ablog.rst:20
+msgid ":ablog:`Font-Awesome 集成 <manual/ablog-configuration-options.html#fa>`"
+msgstr ""
+
+#: ../../posts/ablog.rst:21
+msgid ":ablog:`Markdown 支持 <manual/markdown.html>`"
+msgstr ""
+
+#: ../../posts/ablog.rst:23
+msgid "详细信息见：:ablog:`ABlog 文档 <#>`。"
+msgstr ""
+

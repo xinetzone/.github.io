@@ -57,7 +57,7 @@ blog_locations = {
 # 帖子的日期格式。
 # post_date_format = '%%b %%d, %%Y'
 
-# 将作为文章摘录显示的段落数（默认为 ``1``）。 
+# 将作为文章摘录显示的段落数（默认为 ``1``）。
 # 设置此 ``0`` 将导致在存档页面中不显示帖子摘录。可以使用每个帖子设置此选项
 # post_auto_excerpt = 1
 
@@ -145,14 +145,10 @@ blog_feed_archives = True
 # 默认: ``None``.
 # fontawesome_link_cdn = None
 
-# Sphinx_ 主题已经链接到 `Font Awesome`_。 
+# Sphinx_ 主题已经链接到 `Font Awesome`_。
 # 默认值：``False``
 # fontawesome_included = False
 
-# Alternatively, you can provide the path to `Font Awesome`_ :file:`.css`
-# with the configuration option: fontawesome_css_file
-# Path to `Font Awesome`_ :file:`.css` (default is ``None``) that will
-# be linked to in HTML output by ABlog.
 # 或者，你可以用配置选项 fontawesome_css_file 提供 `Font Awesome`_ :file:`.css` 的路径。
 # （默认是`None`），它将被 ABlog 在 HTML 输出中链接到。
 # fontawesome_css_file = None
@@ -185,6 +181,18 @@ extensions = [
     'ablog',
 ]
 
+extlinks = {
+    # 'duref': ('https://docutils.sourceforge.io/docs/ref/rst/'
+    #           'restructuredtext.html#%s', ''),
+    # 'durole': ('https://docutils.sourceforge.io/docs/ref/rst/'
+    #            'roles.html#%s', ''),
+    # 'dudir': ('https://docutils.sourceforge.io/docs/ref/rst/'
+    #           'directives.html#%s', ''),
+    'daobook': ('https://daobook.github.io/%s', ''),
+    'ablog': ('https://daobook.github.io/ablog/zh-cn/%s', '')
+
+}
+
 # 相对于这个目录，添加任何包含模板的路径。
 templates_path = ["_templates", ablog.get_html_templates_path()]
 
@@ -202,9 +210,6 @@ project = "xinetzone"
 copyright = "2021, Xinwei Liu"
 author = "Xinwei Liu"
 
-# The version info for the project you're documenting, acts as replacement for
-# |version| and |release|, also used in various other places throughout the
-# built documents.
 # 你所记录的项目的版本信息，作为 |version| 和 |release| 的替代，
 # 也用于整个构建的文档的其他地方中使用。
 #
@@ -232,56 +237,58 @@ exclude_patterns = [""]
 # 用于所有文档的 reST 默认角色（用于此标记：`text`）。
 # default_role = None
 
-# If true, '()' will be appended to :func: etc. cross-reference text.
+# 如果为真，`()`将被附加到 `:func:` 等交叉引用文本中。
 # add_function_parentheses = True
 
-# If true, the current module name will be prepended to all description
-# unit titles (such as .. function::).
+# 如果为真，当前的模块名称将被预置在所有描述单元的标题中
+# （如 ``.. function::``）。
 # add_module_names = True
 
 # If true, sectionauthor and moduleauthor directives will be shown in the
 # output. They are ignored by default.
+# 如果为真，sectionauthor 和 moduleauthor 指令将被显示在输出中。
+# 默认情况下它们是被忽略的。
 # show_authors = False
 
-# The name of the Pygments (syntax highlighting) style to use.
+# 要使用的 Pygments（语法高亮）样式的名称。
 pygments_style = 'sphinx'
 
-# A list of ignored prefixes for module index sorting.
+# 用于模块索引排序的忽略的前缀列表。
 # modindex_common_prefix = []
 
-# If true, keep warnings as "system message" paragraphs in the built documents.
+# 如果是真的，在建立的文件中保留警告作为 “系统消息” 段落。
 # keep_warnings = False
 
-# If true, `todo` and `todoList` produce output, else they produce nothing.
+# 如果为真，`todo` 和 `todoList` 会产生输出，
+# 否则它们不会产生任何东西。
 todo_include_todos = True
 
 
-# -- Options for HTML output ----------------------------------------------
+# -- HTML 输出的选项 ----------------------------------------------
 
-# The theme to use for HTML and HTML Help pages.  See the documentation for
-# a list of builtin themes.
+# 用于 HTML 和 HTML 帮助页面的主题。
+# 参见文档中的内置主题列表。
 html_theme = 'alabaster'
 
-# Theme options are theme-specific and customize the look and feel of a theme
-# further.  For a list of options available for each theme, see the
-# documentation.
+# 主题选项是针对特定主题的，可以进一步定制一个主题的外观和感觉。
+# 关于每个主题可用的选项列表，请参见文档。
 html_theme_options = {
     'github_button': False,
 }
 
-# Add any paths that contain custom themes here, relative to this directory.
+# 相对于这个目录，添加任何包含自定义主题的路径。
 html_theme_path = [alabaster.get_path()]
 
-# The name for this set of Sphinx documents.  If None, it defaults to
-# "<project> v<release> documentation".
+# 设置 Sphinx 文件的名称。
+# 如果没有，它默认为 `<project> v<release> documentation`。
 # html_title = None
 
-# A shorter title for the navigation bar.  Default is the same as html_title.
+# 导航栏的一个较短的标题。
+# 默认与 html_title 相同。
 # html_short_title = None
 
-# The name of an image file (relative to this directory) to place at the top
-# of the sidebar.
-# html_logo = None
+# 要放在顶部的图像文件的名称（相对于这个目录）。
+html_logo = "logo.jpg"
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
