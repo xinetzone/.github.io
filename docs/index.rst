@@ -4,8 +4,24 @@
 上善若水
 =====================================
 
-更多关于我的信息见：:ref:`about`。
+.. only:: html
 
+   .. image:: https://badges.gitter.im/xinetzone/blogs.svg/?version=latest
+      :target: https://xinetzone.github.io
+
+   .. image:: https://img.shields.io/github/issues/xinetzone/xinetzone.github.io
+      :target: https://github.com/xinetzone/xinetzone.github.io/issues
+
+   .. image:: https://img.shields.io/github/forks/xinetzone/xinetzone.github.io
+      :target: https://github.com/xinetzone/xinetzone.github.io/forks
+
+   .. image:: https://img.shields.io/github/stars/xinetzone/xinetzone.github.io
+      :target: https://github.com/xinetzone/xinetzone.github.io/stargazers
+   
+   .. image:: https://img.shields.io/github/repo-size/xinetzone/xinetzone.github.io.svg
+
+
+更多关于我的信息见：:ref:`about`。
 
 以下是最近的帖子列表：
 
@@ -21,8 +37,8 @@
    帖子被排除在这个指令之外，这样它们就不会被重复的出现在侧边栏中的导航和最近的帖子中。
 
 .. toctree::
+   :glob:
    :hidden:
 
    about
    drafts/index
-

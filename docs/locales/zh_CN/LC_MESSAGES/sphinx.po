@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ablog 0.10.4.dev6+g5473a00.d20200325\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2021-10-25 14:14+0800\n"
+"POT-Creation-Date: 2021-10-25 19:02+0800\n"
 "PO-Revision-Date: 2020-03-25 16:35+0800\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: zh_Hans_CN\n"
@@ -16,55 +16,76 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
+#: C:/Users/xinzo/anaconda3/envs/py39/lib/site-packages/ablog/templates/archives.html:3
 msgid "Archives"
 msgstr "归档"
 
+#: C:/Users/xinzo/anaconda3/envs/py39/lib/site-packages/ablog/templates/authors.html:2
 msgid "Authors"
 msgstr "作者"
 
+#: C:/Users/xinzo/anaconda3/envs/py39/lib/site-packages/ablog/templates/categories.html:3
 msgid "Categories"
 msgstr "类别"
 
+#: C:/Users/xinzo/anaconda3/envs/py39/lib/site-packages/ablog/templates/collection.html:47
 msgid "Read more ..."
 msgstr "更多 ..."
 
+#: C:/Users/xinzo/anaconda3/envs/py39/lib/site-packages/ablog/templates/languages.html:3
 msgid "Languages"
 msgstr "语言"
 
+#: C:/Users/xinzo/anaconda3/envs/py39/lib/site-packages/ablog/templates/locations.html:3
 msgid "Locations"
 msgstr "地点"
 
+#: C:/Users/xinzo/anaconda3/envs/py39/lib/site-packages/ablog/templates/postcard2.html:5
 msgid "Update"
 msgstr "更新"
 
+#: C:/Users/xinzo/anaconda3/envs/py39/lib/site-packages/ablog/templates/postcard2.html:12
 msgid "Author"
 msgstr "作者"
 
+#: C:/Users/xinzo/anaconda3/envs/py39/lib/site-packages/ablog/templates/postcard2.html:24
 msgid "Location"
 msgstr "地点"
 
+#: C:/Users/xinzo/anaconda3/envs/py39/lib/site-packages/ablog/templates/postcard2.html:35
 msgid "Language"
 msgstr "语言"
 
+#: C:/Users/xinzo/anaconda3/envs/py39/lib/site-packages/ablog/templates/postcard2.html:46
 msgid "Category"
 msgstr "类别"
 
+#: C:/Users/xinzo/anaconda3/envs/py39/lib/site-packages/ablog/templates/postcard2.html:57
+#: C:/Users/xinzo/anaconda3/envs/py39/lib/site-packages/ablog/templates/tagcloud.html:2
 msgid "Tags"
 msgstr "标签"
 
+#: C:/Users/xinzo/anaconda3/envs/py39/lib/site-packages/ablog/templates/postcard2.html:60
 msgid "Tag"
 msgstr "标签"
 
+#: C:/Users/xinzo/anaconda3/envs/py39/lib/site-packages/ablog/templates/postnavy.html:5
 msgid "Previous"
 msgstr "上一篇"
 
+#: C:/Users/xinzo/anaconda3/envs/py39/lib/site-packages/ablog/templates/postnavy.html:15
 msgid "Next"
 msgstr "下一篇"
 
+#: C:/Users/xinzo/anaconda3/envs/py39/lib/site-packages/ablog/templates/recentposts.html:3
 msgid "Recent Posts"
 msgstr "最近帖子"
 
-msgid "Posts in"
-msgstr "文章在"
+#~ msgid "Posts in"
+#~ msgstr "帖子："
+
+#~ msgid "Chinese"
+#~ msgstr "中文"
+

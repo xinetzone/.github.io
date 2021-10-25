@@ -9,7 +9,9 @@
 ABlog 简介
 ============
 
-ABlog 是一个 Sphinx 插件，可以将任何文档或个人网站项目转换为一个成熟的博客，具有：
+ABlog 是一个 Sphinx 插件，可以将任何文档或个人网站项目转换为一个成熟的博客。
+
+具有：
 
 - :ablog:`Atom feeds <blog/atom.xml>`
 - :ablog:`档案页 <blog/archive.html>`

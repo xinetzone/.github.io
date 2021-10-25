@@ -8,16 +8,43 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xinetzone 0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-25 14:14+0800\n"
+"POT-Creation-Date: 2021-10-25 18:57+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
 #: ../../drafts/index.rst:3
 msgid "缓存区"
+msgstr ""
+
+#: ../../drafts/index.rst:5
+msgid "有待探讨的 Python 模块："
+msgstr ""
+
+#: ../../drafts/index.rst:7
+msgid "`feedgen`__"
+msgstr ""
+
+#: ../../drafts/index.rst:8
+msgid "`Invoke`__"
+msgstr ""
+
+#: ../../drafts/index.rst:13
+msgid ""
+"python setup.py extract_messages -o ablog/locales/sphinx.pot python "
+"setup.py init_catalog -l zh_CN -i ablog/locales/sphinx.pot -o "
+"ablog/locales/zh_CN/LC_MESSAGES/sphinx.po python setup.py update_catalog "
+"-l zh_CN -i ablog/locales/sphinx.pot -o "
+"ablog/locales/zh_CN/LC_MESSAGES/sphinx.po"
+msgstr ""
+
+#: ../../drafts/index.rst:17
+msgid ""
+"python setup.py compile_catalog --directory ablog/locales/ --domain "
+"sphinx --locale zh_CN"
 msgstr ""
 

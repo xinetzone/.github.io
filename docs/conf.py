@@ -6,10 +6,13 @@
 # 注意不是所有可能的配置值都出现在这个文件中。
 # 所有的配置值都有一个默认值；被注释掉的值是用来显示默认值的。
 
+import re
 import os
 import sys
 import ablog
 import alabaster
+from pkg_resources import get_distribution
+from sphinx import addnodes
 
 # -- ABlog 的常规选项 ----------------------------------------------------
 
@@ -117,7 +120,7 @@ blog_feed_archives = True
 
 # Specify custom Jinja2 templates for feed entry elements:
 #     `title`, `summary`, or `content`
-# 为饲料条目元素指定自定义的 Jinja2 模板：
+# 为 feed 条目元素指定自定义的 Jinja2 模板：
 # `title`、`summary` 或 `content`
 # 例如，添加一个额外的 feed，用于发布到社交媒体：
 # blog_feed_templates = {
@@ -147,17 +150,17 @@ blog_feed_archives = True
 
 # Sphinx_ 主题已经链接到 `Font Awesome`_。
 # 默认值：``False``
-# fontawesome_included = False
+fontawesome_included = True
 
 # 或者，你可以用配置选项 fontawesome_css_file 提供 `Font Awesome`_ :file:`.css` 的路径。
-# （默认是`None`），它将被 ABlog 在 HTML 输出中链接到。
-# fontawesome_css_file = None
+# （默认是 `None`），它将被 ABlog 在 HTML 输出中链接到。
+fontawesome_css_file = "css/font-awesome.css"
 
 # -- Disqus 集成 -------------------------------------------------------
 
 # 你可以通过设置 ``disqus_shortname`` 变量来启用 Discuz_。
 # Disqus_ 是博客的短名称。
-# disqus_shortname = None
+disqus_shortname = "xinetzone"
 
 # 选择 disqus 是非帖子的页面，默认为 ``False``。
 # disqus_pages = False
@@ -197,7 +200,10 @@ extlinks = {
 templates_path = ["_templates", ablog.get_html_templates_path()]
 
 # 源文件名的后缀。
-source_suffix = ".rst"
+source_suffix = {
+    ".rst": "restructuredtext",
+    ".md": "markdown",
+}
 
 # 源文件的编码方式。
 # source_encoding = 'utf-8-sig'
@@ -232,23 +238,21 @@ language = "zh_CN"
 
 # 模式列表，相对于源目录，匹配文件和目录的列表，
 # 这些文件和目录在寻找源文件时要被忽略。
-exclude_patterns = [""]
+exclude_patterns = ["_build"]
 
 # 用于所有文档的 reST 默认角色（用于此标记：`text`）。
 # default_role = None
 
-# 如果为真，`()`将被附加到 `:func:` 等交叉引用文本中。
+# 如果为真，`()` 将被附加到 `:func:` 等交叉引用文本中。
 # add_function_parentheses = True
 
 # 如果为真，当前的模块名称将被预置在所有描述单元的标题中
 # （如 ``.. function::``）。
 # add_module_names = True
 
-# If true, sectionauthor and moduleauthor directives will be shown in the
-# output. They are ignored by default.
 # 如果为真，sectionauthor 和 moduleauthor 指令将被显示在输出中。
 # 默认情况下它们是被忽略的。
-# show_authors = False
+show_authors = True
 
 # 要使用的 Pygments（语法高亮）样式的名称。
 pygments_style = 'sphinx'
@@ -293,7 +297,7 @@ html_logo = "logo.jpg"
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
-# html_favicon = None
+html_favicon = "page-logo.jfif"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
