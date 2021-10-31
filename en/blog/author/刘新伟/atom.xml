@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://xinetzone.github.io/</id>
   <title>xinetzone Blog - Posts by 刘新伟</title>
-  <updated>2021-10-25T11:53:00.819367+00:00</updated>
+  <updated>2021-10-31T17:39:34.063599+00:00</updated>
   <link href="https://xinetzone.github.io/"/>
   <link href="https://xinetzone.github.io/blog/author/刘新伟/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.20">ABlog</generator>
@@ -30,5 +30,45 @@
     <link href="https://xinetzone.github.io/release/v0.1.html" rel="alternate"/>
     <category term="xinetzone" label="xinetzone"/>
     <published>2021-10-25T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://xinetzone.github.io/posts/sphinx.html</id>
+    <title>Sphinx</title>
+    <updated>2021-10-26T00:00:00+00:00</updated>
+    <author>
+      <name>刘新伟</name>
+    </author>
+    <content type="html">&lt;p&gt;“打开 &lt;em&gt;命令提示符&lt;/em&gt; （&lt;kbd class="kbd compound docutils literal notranslate"&gt;&lt;kbd class="kbd docutils literal notranslate"&gt;⊞Win&lt;/kbd&gt;-&lt;kbd class="kbd docutils literal notranslate"&gt;r&lt;/kbd&gt;&lt;/kbd&gt; 并输入 &lt;strong class="command"&gt;cmd&lt;/strong&gt;）并运行相同的命令。”&lt;/p&gt;
+&lt;img alt="more info" class="align-middle" src="../../_images/more.png" /&gt;
+</content>
+    <link href="https://xinetzone.github.io/posts/sphinx.html" rel="alternate"/>
+    <summary>“打开 命令提示符 （⊞Win-r 并输入 cmd）并运行相同的命令。”more info</summary>
+    <published>2021-10-26T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://xinetzone.github.io/posts/_draft.html</id>
+    <title>草稿</title>
+    <updated>2021-10-26T00:00:00+00:00</updated>
+    <author>
+      <name>刘新伟</name>
+    </author>
+    <content type="html">&lt;p&gt;This is a bulleted list.&lt;/p&gt;
+</content>
+    <link href="https://xinetzone.github.io/posts/_draft.html" rel="alternate"/>
+    <summary>This is a bulleted list.</summary>
+    <published>2021-10-26T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://xinetzone.github.io/posts/_draft2.html</id>
+    <title>草稿2</title>
+    <updated>2021-10-26T00:00:00+00:00</updated>
+    <author>
+      <name>刘新伟</name>
+    </author>
+    <content type="html">&lt;p&gt;Take it away, Eric the Orchestra Leader!&lt;/p&gt;
+</content>
+    <link href="https://xinetzone.github.io/posts/_draft2.html" rel="alternate"/>
+    <summary>Take it away, Eric the Orchestra Leader!</summary>
+    <published>2021-10-26T00:00:00+00:00</published>
   </entry>
 </feed>

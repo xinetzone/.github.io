@@ -7,7 +7,8 @@
 .. only:: html
 
    .. image:: https://badges.gitter.im/xinetzone/blogs.svg/?version=latest
-      :target: https://xinetzone.github.io
+      :target: https://gitter.im/xinetzone/blogs?utm_source=badge
+         &utm_medium=badge&utm_campaign=pr-badge
 
    .. image:: https://img.shields.io/github/issues/xinetzone/xinetzone.github.io
       :target: https://github.com/xinetzone/xinetzone.github.io/issues
@@ -21,7 +22,7 @@
    .. image:: https://img.shields.io/github/repo-size/xinetzone/xinetzone.github.io.svg
 
 
-更多关于我的信息见：:ref:`about`。
+更多信息见：:ref:`about`。
 
 以下是最近的帖子列表：
 
