@@ -1,4 +1,3 @@
-
 .. post:: Oct 24, 2021
    :tags: ABlog
    :author: lxw
@@ -20,4 +19,4 @@ ABlog 是一个 Sphinx 插件，可以将任何文档或个人网站项目转换
 - :ablog:`Font-Awesome 集成 <manual/ablog-configuration-options.html#fa>`
 - :ablog:`Markdown 支持 <manual/markdown.html>`
 
-详细信息见：:ablog:`ABlog 文档 <#>`。
+详细信息见：:ablog:`ABlog 文档 <#>` 与 :ablog:`ABlog 配置选项 <manual/ablog-configuration-options.html>`。

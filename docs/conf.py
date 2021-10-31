@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 # xinetzone 构建的配置文件，
 # 由 `ablog start` 在 2021 年 10 月 24 日星期日 22:28:16 创建。
 #
@@ -14,13 +12,24 @@ import alabaster
 from pkg_resources import get_distribution
 from sphinx import addnodes
 
+# -- Path setup --------------------------------------------------------------
+
+# If extensions (or modules to document with autodoc) are in another directory,
+# add these directories to sys.path here. If the directory is relative to the
+# documentation root, use os.path.abspath to make it absolute, like shown here.
+#
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath('.'))
+
+from sphinx_conf import *
+
 # -- ABlog 的常规选项 ----------------------------------------------------
 
-# A path relative to the configuration directory for blog archive pages.
 # 一个相对于配置目录的博客档案页的路径。
 blog_path = 'blog'
 
-# The "title" for the blog, used in active pages.  Default is ``'Blog'``.
 # 博客的 “标题”，在活动页面中使用。默认为 ``'Blog'``。
 blog_title = "xinetzone Blog"
 
@@ -29,6 +38,7 @@ blog_title = "xinetzone Blog"
 blog_baseurl = "https://xinetzone.github.io/"
 
 # 选择只对帖子标题进行存档。只归档标题可以加快项目建设的速度。
+# 默认 ``False``
 # blog_archive_titles = False
 
 # --    博客作者、语言和位置 -------------------------------------------------
@@ -36,32 +46,37 @@ blog_baseurl = "https://xinetzone.github.io/"
 # 一个作者名字的字典，映射到作者的完整显示名称和链接。
 # 字典的键值应该在 ``post`` 指令中使用，以指代作者。默认是 ``{}``。
 blog_authors = {
-    "lxw": ("刘新伟", None),
+    "lxw": ("刘新伟", "https://xinetzone.github.io"),
 }
 
 # 语言代码名称的字典，映射到这些语言的完整显示名称和链接。
 # 类似于 :confval:`blog_authors`，
 # 字典的键应该在 `post` 指令中使用，以指代位置。默认是 `{}`。
-blog_languages = {
-    'zh': ('Chinese', None),
-    'en': ('English', None)
-}
+blog_languages = {'zh': ('Chinese', None), 'en': ('English', None)}
 
 # 一个位置名称的字典，映射到这些位置的完整显示名称和链接。
 # 类似于 :confval:`blog_authors`，字典的键应该在 ``post`` 指令中使用，以引用位置。
 # 默认是 ``{}``.
 blog_locations = {
-    # 'Earth': ('The Blue Planet', 'https://en.wikipedia.org/wiki/Earth'),
-    "daobook": ("Daobook", "https://daobook.github.io")
+    'Earth': ('The Blue Planet', 'https://en.wikipedia.org/wiki/Earth'),
 }
+
+# 默认作者的名字
+blog_default_author = "lxw"
+# 默认语言的代码名称
+blog_default_language = 'zh'
+# 在 blog_locations 中定义的默认位置的名称。
+# blog_default_location = None
 
 # -- 博客帖子相关 --------------------------------------------------------
 
-# 帖子的日期格式。
-# post_date_format = '%%b %%d, %%Y'
+# 帖子的日期格式。默认 ``'%b %d, %Y'``
+#  ``datetime.date.strftime()`` 的参数
+post_date_format = '%c'
 
 # 将作为文章摘录显示的段落数（默认为 ``1``）。
-# 设置此 ``0`` 将导致在存档页面中不显示帖子摘录。可以使用每个帖子设置此选项
+# 设置此 ``0`` 将导致在存档页面中不显示帖子摘录。
+# 可以使用每个 post 指令设置 ``excerpt`` 选项
 # post_auto_excerpt = 1
 
 # 图片的索引，将显示在文章的摘录中。
@@ -75,7 +90,7 @@ post_auto_image = 1
 
 # 当 ``True`` 时，帖子的标题和摘要总是从包含 :rst:dir:`post` 指令的部分，
 # 而不是从文档中提取。这是当 :rst:dir:`post` 在一个文档中被多次使用时的行为。
-# 默认是`False`。
+# 默认是 ``False``。
 # post_always_section = False
 
 # 当 ``False`` 时，:rst:dir:`orphan` 指令不会为每个帖子自动设置。
@@ -86,25 +101,27 @@ post_auto_image = 1
 
 # -- ABlog 侧边栏 -------------------------------------------------------
 
-# 在你的 HTML 输出中，有七个侧边栏可以包括。postcard.html 提供有关当前帖子的信息。
+# 在你的 HTML 输出中，有七个侧边栏可以包括。
+# postcard.html 提供有关当前帖子的信息。
 # recentposts.html 列出最近的五个帖子。
 # 其他的侧边栏提供了一个链接到为每个标签、类别和年份生成的档案页。
 # 此外，还有 authors.html, languages.html, and locations.html 侧边栏，
 # 链接到作者和位置的档案页。
 html_sidebars = {
-    '**': ['about.html',
-           'postcard.html', 'navigation.html',
-           'recentposts.html', 'tagcloud.html',
-           'categories.html',  'archives.html',
-           'searchbox.html',
-           ],
+    '**': [
+        'about.html',
+        'postcard.html',
+        'navigation.html',
+        'recentposts.html',
+        'tagcloud.html',
+        'categories.html',
+        'archives.html',
+        'searchbox.html',
+    ],
 }
 
 # -- Blog Feed 选项 --------------------------------------------------------
 
-# Turn feeds by setting :confval:`blog_baseurl` configuration variable.
-# Choose to create feeds per author, location, tag, category, and year,
-# default is ``False``.
 # 通过设置 :confval:`blog_baseurl` 配置变量来转动 feeds。
 # 选择按作者、地点、标签、类别和年份创建 feeds，默认为 ``False``。
 blog_feed_archives = True
@@ -118,8 +135,6 @@ blog_feed_archives = True
 # 选择只 feed 文章标题，默认为 ``False``。
 # blog_feed_titles = False
 
-# Specify custom Jinja2 templates for feed entry elements:
-#     `title`, `summary`, or `content`
 # 为 feed 条目元素指定自定义的 Jinja2 模板：
 # `title`、`summary` 或 `content`
 # 例如，添加一个额外的 feed，用于发布到社交媒体：
@@ -144,8 +159,8 @@ blog_feed_archives = True
 
 # ABlog 模板将使用 Font Awesome 图标，如果以下情况之一是 ``True``的话：
 
-# 链接到 `Bootstrap CDN`_ 的 `Font Awesome`_，在侧边栏和文章页脚使用图标。
-# 默认: ``None``.
+# 在 `Bootstrap CDN`_ 或其他地方托管的 `Font Awesome`_ :file:`.css` 的 URL。
+# 默认: ``None``。
 # fontawesome_link_cdn = None
 
 # Sphinx_ 主题已经链接到 `Font Awesome`_。
@@ -159,7 +174,7 @@ fontawesome_css_file = "css/font-awesome.css"
 # -- Disqus 集成 -------------------------------------------------------
 
 # 你可以通过设置 ``disqus_shortname`` 变量来启用 Discuz_。
-# Disqus_ 是博客的短名称。
+# Disqus_ 是博客的简称。
 disqus_shortname = "xinetzone"
 
 # 选择 disqus 是非帖子的页面，默认为 ``False``。
@@ -169,6 +184,22 @@ disqus_shortname = "xinetzone"
 # 默认为 ``False``。
 # disqus_drafts = False
 
+# -- ABlog 可选 ------------------------------------------------------------
+# 构建输出文件的目录名称。默认为 ``'_website'``。
+# ablog_website = '_website'
+
+# 构建缓存文件的目录名称。默认为 ``'.doctrees'``。
+# ablog_doctrees = '.doctrees'
+
+# HTML 生成器，默认为 ``'dirhtml'``。
+# 建立 HTML 页面，但每个文件只有一个目录。
+# 如果从网络服务器提供服务，可以获得更漂亮的 URL（没有 .html）。
+# 替代方案是 ``'html'``，每个文档建立一个 HTML 文件。
+# ablog_builder = 'dirhtml'
+
+# GitHub 用户名被 ablog deploy 命令使用。
+# github_pages = ''
+
 # -- Sphinx 选项 -----------------------------------------------------------
 
 # 如果你的项目需要一个最小的 Sphinx 版本，在这里说明。
@@ -176,12 +207,18 @@ needs_sphinx = '1.6'
 
 # 在这里添加任何 Sphinx 插件模块的名字，以字符串的形式。
 # 它们可以是 Sphinx 自带的插件（命名为 `sphinx.ext.*`）或你自定义的。
+# extensions = [
+#     'sphinx.ext.extlinks',
+#     'sphinx.ext.intersphinx',
+#     'sphinx.ext.todo',
+#     'alabaster',
+#     'ablog',
+# ]
+
 extensions = [
-    'sphinx.ext.extlinks',
-    'sphinx.ext.intersphinx',
-    'sphinx.ext.todo',
-    'alabaster',
-    'ablog',
+    'sphinx.ext.autodoc', 'sphinx.ext.doctest', 'sphinx.ext.todo',
+    'sphinx.ext.autosummary', 'sphinx.ext.extlinks', 'sphinx.ext.intersphinx',
+    'sphinx.ext.viewcode', 'sphinx.ext.inheritance_diagram', 'ablog'
 ]
 
 extlinks = {
@@ -193,7 +230,6 @@ extlinks = {
     #           'directives.html#%s', ''),
     'daobook': ('https://daobook.github.io/%s', ''),
     'ablog': ('https://daobook.github.io/ablog/zh-cn/%s', '')
-
 }
 
 # 相对于这个目录，添加任何包含模板的路径。
@@ -222,7 +258,7 @@ author = "Xinwei Liu"
 # 简短的 X.Y 版本。
 version = "0.0"
 # 完整版本，包括 alpha/beta/rc 标签。
-release = "alpha"
+release = "0.0.1"
 
 # 由 Sphinx 自动生成的内容的语言。支持的语言列表请参考文档。
 #
@@ -266,7 +302,6 @@ pygments_style = 'sphinx'
 # 如果为真，`todo` 和 `todoList` 会产生输出，
 # 否则它们不会产生任何东西。
 todo_include_todos = True
-
 
 # -- HTML 输出的选项 ----------------------------------------------
 
@@ -363,3 +398,8 @@ html_search_language = 'zh'
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = "xinetzonedoc"
+
+intersphinx_mapping = {
+    'python': ('https://docs.python.org/3/', None),
+    'sphinx': ('https://daobook.github.io/sphinx/zh-CN', None),
+}

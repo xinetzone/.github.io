@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xinetzone 0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-25 18:57+0800\n"
+"POT-Creation-Date: 2021-10-31 23:09+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,11 @@ msgstr ""
 msgid "`Invoke`__"
 msgstr ""
 
-#: ../../drafts/index.rst:13
+#: ../../drafts/index.rst:9
+msgid "`Jinja`__"
+msgstr ""
+
+#: ../../drafts/index.rst:15
 msgid ""
 "python setup.py extract_messages -o ablog/locales/sphinx.pot python "
 "setup.py init_catalog -l zh_CN -i ablog/locales/sphinx.pot -o "
@@ -42,7 +46,7 @@ msgid ""
 "ablog/locales/zh_CN/LC_MESSAGES/sphinx.po"
 msgstr ""
 
-#: ../../drafts/index.rst:17
+#: ../../drafts/index.rst:19
 msgid ""
 "python setup.py compile_catalog --directory ablog/locales/ --domain "
 "sphinx --locale zh_CN"

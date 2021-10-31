@@ -8,50 +8,514 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xinetzone 0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-25 14:14+0800\n"
+"POT-Creation-Date: 2021-10-31 23:10+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.9.1\n"
 
-#: ../../posts/ablog.rst:12
+#: ../../posts/_draft.rst:2
+msgid "草稿"
+msgstr ""
+
+#: ../../posts/_draft.rst:8
+msgid "This is a bulleted list."
+msgstr ""
+
+#: ../../posts/_draft.rst:9
+msgid "It has two items, the second item uses two lines."
+msgstr ""
+
+#: ../../posts/_draft.rst:12 ../../posts/_draft.rst:15
+msgid "This is a numbered list."
+msgstr ""
+
+#: ../../posts/_draft.rst:13 ../../posts/_draft.rst:16
+msgid "It has two items too."
+msgstr ""
+
+#: ../../posts/_draft.rst:18
+msgid "this is"
+msgstr ""
+
+#: ../../posts/_draft.rst:19
+msgid "a list"
+msgstr ""
+
+#: ../../posts/_draft.rst:21
+msgid "with a nested list"
+msgstr ""
+
+#: ../../posts/_draft.rst:22
+msgid "and some subitems"
+msgstr ""
+
+#: ../../posts/_draft.rst:24
+msgid "and here the parent list continues"
+msgstr ""
+
+#: ../../posts/_draft.rst:29
+msgid "term (up to a line of text)"
+msgstr ""
+
+#: ../../posts/_draft.rst:27
+msgid "Definition of the term, which must be indented"
+msgstr ""
+
+#: ../../posts/_draft.rst:29
+msgid "and can even consist of multiple paragraphs"
+msgstr ""
+
+#: ../../posts/_draft.rst:32
+msgid "next term"
+msgstr ""
+
+#: ../../posts/_draft.rst:32
+msgid "Description"
+msgstr ""
+
+#: ../../posts/_draft2.rst:2
+msgid "草稿2"
+msgstr ""
+
+#: ../../posts/_draft2.rst:10
+msgid "Take it away, Eric the Orchestra Leader!"
+msgstr ""
+
+#: ../../posts/_draft2.rst
+msgid "A one, two, a one two three four"
+msgstr ""
+
+#: ../../posts/_draft2.rst
+msgid "Half a bee, philosophically,"
+msgstr ""
+
+#: ../../posts/_draft2.rst
+msgid "must, *ipso facto*, half not be."
+msgstr ""
+
+#: ../../posts/_draft2.rst
+msgid "But half the bee has got to be,"
+msgstr ""
+
+#: ../../posts/_draft2.rst
+msgid "*vis a vis* its entity.  D'you see?"
+msgstr ""
+
+#: ../../posts/_draft2.rst
+msgid "But can a bee be said to be"
+msgstr ""
+
+#: ../../posts/_draft2.rst
+msgid "or not to be an entire bee,"
+msgstr ""
+
+#: ../../posts/_draft2.rst
+msgid "when half the bee is not a bee,"
+msgstr ""
+
+#: ../../posts/_draft2.rst
+msgid "due to some ancient injury?"
+msgstr ""
+
+#: ../../posts/_draft2.rst
+msgid "Singing..."
+msgstr ""
+
+#: ../../posts/_draft2.rst:26
+msgid "This is a normal text paragraph. The next paragraph is a code sample::"
+msgstr ""
+
+#: ../../posts/_draft2.rst:33
+msgid "This is a normal text paragraph again."
+msgstr ""
+
+#: ../../posts/_draft2.rst:36
+msgid "就会反馈 还不简单 很简单 就 火炬计划"
+msgstr ""
+
+#: ../../posts/_draft2.rst:43
+msgid ""
+"This function installs a `handler` for every signal known by the "
+"`signalww` module.  See the section `about-signals` for more information."
+msgstr ""
+
+#: ../../posts/ablog.rst:9
 msgid "ABlog 简介"
 msgstr ""
 
-#: ../../posts/ablog.rst:14
-msgid "ABlog 是一个 Sphinx 插件，可以将任何文档或个人网站项目转换为一个成熟的博客，具有："
+#: ../../posts/ablog.rst:11
+msgid "ABlog 是一个 Sphinx 插件，可以将任何文档或个人网站项目转换为一个成熟的博客。"
 msgstr ""
 
-#: ../../posts/ablog.rst:16
+#: ../../posts/ablog.rst:13
+msgid "具有："
+msgstr ""
+
+#: ../../posts/ablog.rst:15
 msgid ":ablog:`Atom feeds <blog/atom.xml>`"
 msgstr ""
 
-#: ../../posts/ablog.rst:17
+#: ../../posts/ablog.rst:16
 msgid ":ablog:`档案页 <blog/archive.html>`"
 msgstr ""
 
-#: ../../posts/ablog.rst:18
+#: ../../posts/ablog.rst:17
 msgid ":ablog:`博客侧边栏 <manual/ablog-configuration-options.html#blog-sidebars>`"
 msgstr ""
 
-#: ../../posts/ablog.rst:19
+#: ../../posts/ablog.rst:18
 msgid ""
 ":ablog:`Disqus 集成<manual/ablog-configuration-options.html#disqus-"
 "integration>`"
 msgstr ""
 
-#: ../../posts/ablog.rst:20
+#: ../../posts/ablog.rst:19
 msgid ":ablog:`Font-Awesome 集成 <manual/ablog-configuration-options.html#fa>`"
 msgstr ""
 
-#: ../../posts/ablog.rst:21
+#: ../../posts/ablog.rst:20
 msgid ":ablog:`Markdown 支持 <manual/markdown.html>`"
 msgstr ""
 
-#: ../../posts/ablog.rst:23
+#: ../../posts/ablog.rst:22
 msgid "详细信息见：:ablog:`ABlog 文档 <#>`。"
 msgstr ""
+
+#: ../../posts/sphinx.rst:3
+msgid "Sphinx"
+msgstr ""
+
+#: ../../posts/sphinx.rst:10
+msgid "\"打开 *命令提示符* （:kbd:`⊞Win-r` 并输入 :command:`cmd`）并运行相同的命令。\""
+msgstr ""
+
+#: ../../posts/sphinx.rst:12
+msgid ""
+"Sphinx 的主要目标之一是在任何 :term:`域` 中轻松记录 :term:`对象` （在一个非常普遍的意义上）。 "
+"一个域是属于一起的对象类型的集合，有完整的标记来创建和引用这些对象的描述。"
+msgstr ""
+
+#: ../../posts/sphinx.rst:15
+msgid ""
+"For a great \"introduction\" to writing docs in general -- the whys and "
+"hows, see also `Write the docs`__, written by Eric Holscher."
+msgstr ""
+
+#: ../../posts/sphinx.rst:21
+msgid ":program:`sphinx-quickstart`"
+msgstr ""
+
+#: ../../posts/sphinx.rst:23
+msgid ":rst:role:`ref`"
+msgstr ""
+
+#: ../../posts/sphinx.rst:25
+msgid "待处理"
+msgstr ""
+
+#: ../../posts/sphinx.rst:25
+msgid "待更新"
+msgstr ""
+
+#: ../../posts/sphinx.rst:27
+msgid ":option:`-b <sphinx-build -b>`"
+msgstr ""
+
+#: ../../posts/sphinx.rst:29
+msgid "|more| 符号"
+msgstr ""
+
+#: ../../posts/sphinx.rst:52
+msgid "more info"
+msgstr ""
+
+#: ../../posts/sphinx.rst:31
+msgid ":file:`make.bat`"
+msgstr ""
+
+#: ../../posts/sphinx.rst:33
+msgid ":command:`make`"
+msgstr ""
+
+#: ../../posts/sphinx.rst:35
+msgid ":rst:dir:`py:class`"
+msgstr ""
+
+#: ../../posts/sphinx.rst:37
+msgid ":rst:dir:`py:method`"
+msgstr ""
+
+#: ../../posts/sphinx.rst:41
+msgid ""
+"Return an iterator that yields tuples of an index and an item of the "
+"*sequence*. (And so on.)"
+msgstr ""
+
+#: ../../posts/sphinx.rst:44
+msgid ":func:`enumerate`"
+msgstr ""
+
+#: ../../posts/sphinx.rst:46
+msgid ":confval:`extensions`"
+msgstr ""
+
+#: ../../posts/sphinx.rst:48
+msgid ":py:data:`sys.path`"
+msgstr ""
+
+#: ../../posts/sphinx.rst:51
+msgid "Footnotes"
+msgstr ""
+
+#: ../../posts/sphinx.rst:60
+msgid ""
+"The most important option: it selects a builder.  The most common "
+"builders are:"
+msgstr ""
+
+#: ../../posts/sphinx.rst:63
+msgid "**html**"
+msgstr ""
+
+#: ../../posts/sphinx.rst:64
+msgid "Build HTML pages.  This is the default builder."
+msgstr ""
+
+#: io.open:1 of
+msgid "Open file and return a stream.  Raise OSError upon failure."
+msgstr ""
+
+#: io.open:3 of
+msgid ""
+"file is either a text or byte string giving the name (and the path if the"
+" file isn't in the current working directory) of the file to be opened or"
+" an integer file descriptor of the file to be wrapped. (If a file "
+"descriptor is given, it is closed when the returned I/O object is closed,"
+" unless closefd is set to False.)"
+msgstr ""
+
+#: io.open:9 of
+msgid ""
+"mode is an optional string that specifies the mode in which the file is "
+"opened. It defaults to 'r' which means open for reading in text mode.  "
+"Other common values are 'w' for writing (truncating the file if it "
+"already exists), 'x' for creating and writing to a new file, and 'a' for "
+"appending (which on some Unix systems, means that all writes append to "
+"the end of the file regardless of the current seek position). In text "
+"mode, if encoding is not specified the encoding used is platform "
+"dependent: locale.getpreferredencoding(False) is called to get the "
+"current locale encoding. (For reading and writing raw bytes use binary "
+"mode and leave encoding unspecified.) The available modes are:"
+msgstr ""
+
+#: io.open:21 of
+msgid "Character"
+msgstr ""
+
+#: io.open:21 of
+msgid "Meaning"
+msgstr ""
+
+#: io.open:23 of
+msgid "'r'"
+msgstr ""
+
+#: io.open:23 of
+msgid "open for reading (default)"
+msgstr ""
+
+#: io.open:24 of
+msgid "'w'"
+msgstr ""
+
+#: io.open:24 of
+msgid "open for writing, truncating the file first"
+msgstr ""
+
+#: io.open:25 of
+msgid "'x'"
+msgstr ""
+
+#: io.open:25 of
+msgid "create a new file and open it for writing"
+msgstr ""
+
+#: io.open:26 of
+msgid "'a'"
+msgstr ""
+
+#: io.open:26 of
+msgid "open for writing, appending to the end of the file if it exists"
+msgstr ""
+
+#: io.open:27 of
+msgid "'b'"
+msgstr ""
+
+#: io.open:27 of
+msgid "binary mode"
+msgstr ""
+
+#: io.open:28 of
+msgid "'t'"
+msgstr ""
+
+#: io.open:28 of
+msgid "text mode (default)"
+msgstr ""
+
+#: io.open:29 of
+msgid "'+'"
+msgstr ""
+
+#: io.open:29 of
+msgid "open a disk file for updating (reading and writing)"
+msgstr ""
+
+#: io.open:30 of
+msgid "'U'"
+msgstr ""
+
+#: io.open:30 of
+msgid "universal newline mode (deprecated)"
+msgstr ""
+
+#: io.open:33 of
+msgid ""
+"The default mode is 'rt' (open for reading text). For binary random "
+"access, the mode 'w+b' opens and truncates the file to 0 bytes, while "
+"'r+b' opens the file without truncation. The 'x' mode implies 'w' and "
+"raises an `FileExistsError` if the file already exists."
+msgstr ""
+
+#: io.open:38 of
+msgid ""
+"Python distinguishes between files opened in binary and text modes, even "
+"when the underlying operating system doesn't. Files opened in binary mode"
+" (appending 'b' to the mode argument) return contents as bytes objects "
+"without any decoding. In text mode (the default, or when 't' is appended "
+"to the mode argument), the contents of the file are returned as strings, "
+"the bytes having been first decoded using a platform-dependent encoding "
+"or using the specified encoding if given."
+msgstr ""
+
+#: io.open:46 of
+msgid ""
+"'U' mode is deprecated and will raise an exception in future versions of "
+"Python.  It has no effect in Python 3.  Use newline to control universal "
+"newlines mode."
+msgstr ""
+
+#: io.open:50 of
+msgid ""
+"buffering is an optional integer used to set the buffering policy. Pass 0"
+" to switch buffering off (only allowed in binary mode), 1 to select line "
+"buffering (only usable in text mode), and an integer > 1 to indicate the "
+"size of a fixed-size chunk buffer.  When no buffering argument is given, "
+"the default buffering policy works as follows:"
+msgstr ""
+
+#: io.open:56 of
+msgid ""
+"Binary files are buffered in fixed-size chunks; the size of the buffer is"
+" chosen using a heuristic trying to determine the underlying device's "
+"\"block size\" and falling back on `io.DEFAULT_BUFFER_SIZE`. On many "
+"systems, the buffer will typically be 4096 or 8192 bytes long."
+msgstr ""
+
+#: io.open:61 of
+msgid ""
+"\"Interactive\" text files (files for which isatty() returns True) use "
+"line buffering.  Other text files use the policy described above for "
+"binary files."
+msgstr ""
+
+#: io.open:65 of
+msgid ""
+"encoding is the name of the encoding used to decode or encode the file. "
+"This should only be used in text mode. The default encoding is platform "
+"dependent, but any encoding supported by Python can be passed.  See the "
+"codecs module for the list of supported encodings."
+msgstr ""
+
+#: io.open:70 of
+msgid ""
+"errors is an optional string that specifies how encoding errors are to be"
+" handled---this argument should not be used in binary mode. Pass 'strict'"
+" to raise a ValueError exception if there is an encoding error (the "
+"default of None has the same effect), or pass 'ignore' to ignore errors. "
+"(Note that ignoring encoding errors can lead to data loss.) See the "
+"documentation for codecs.register or run 'help(codecs.Codec)' for a list "
+"of the permitted encoding error strings."
+msgstr ""
+
+#: io.open:78 of
+msgid ""
+"newline controls how universal newlines works (it only applies to text "
+"mode). It can be None, '', '\\n', '\\r', and '\\r\\n'.  It works as "
+"follows:"
+msgstr ""
+
+#: io.open:82 of
+msgid ""
+"On input, if newline is None, universal newlines mode is enabled. Lines "
+"in the input can end in '\\n', '\\r', or '\\r\\n', and these are "
+"translated into '\\n' before being returned to the caller. If it is '', "
+"universal newline mode is enabled, but line endings are returned to the "
+"caller untranslated. If it has any of the other legal values, input lines"
+" are only terminated by the given string, and the line ending is returned"
+" to the caller untranslated."
+msgstr ""
+
+#: io.open:90 of
+msgid ""
+"On output, if newline is None, any '\\n' characters written are "
+"translated to the system default line separator, os.linesep. If newline "
+"is '' or '\\n', no translation takes place. If newline is any of the "
+"other legal values, any '\\n' characters written are translated to the "
+"given string."
+msgstr ""
+
+#: io.open:96 of
+msgid ""
+"If closefd is False, the underlying file descriptor will be kept open "
+"when the file is closed. This does not work when a file name is given and"
+" must be True in that case."
+msgstr ""
+
+#: io.open:100 of
+msgid ""
+"A custom opener can be used by passing a callable as *opener*. The "
+"underlying file descriptor for the file object is then obtained by "
+"calling *opener* with (*file*, *flags*). *opener* must return an open "
+"file descriptor (passing os.open as *opener* results in functionality "
+"similar to passing None)."
+msgstr ""
+
+#: io.open:106 of
+msgid ""
+"open() returns a file object whose type depends on the mode, and through "
+"which the standard file operations such as reading and writing are "
+"performed. When open() is used to open a file in a text mode ('w', 'r', "
+"'wt', 'rt', etc.), it returns a TextIOWrapper. When used to open a file "
+"in a binary mode, the returned class varies: in read binary mode, it "
+"returns a BufferedReader; in write binary and append binary modes, it "
+"returns a BufferedWriter, and in read/write mode, it returns a "
+"BufferedRandom."
+msgstr ""
+
+#: io.open:115 of
+msgid ""
+"It is also possible to use a string or bytearray as a file for both "
+"reading and writing. For strings StringIO can be used like a file opened "
+"in a text mode, and for bytes a BytesIO can be used like a file opened in"
+" a binary mode."
+msgstr ""
+
+#~ msgid "ABlog 是一个 Sphinx 插件，可以将任何文档或个人网站项目转换为一个成熟的博客，具有："
+#~ msgstr ""
 

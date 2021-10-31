@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: xinetzone \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-10-24 23:29+0800\n"
+"POT-Creation-Date: 2021-10-26 21:08+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,11 +21,12 @@ msgstr ""
 msgid "上善若水"
 msgstr "Sanstyle"
 
-#: ../../index.rst:7
-msgid "更多关于我的信息见：:ref:`about`。"
+#: ../../index.rst:25
+#, fuzzy
+msgid "更多信息见：:ref:`about`。"
 msgstr "For more information see :ref:`about`"
 
-#: ../../index.rst:10
+#: ../../index.rst:27
 msgid "以下是最近的帖子列表："
 msgstr "The following is a list of recent posts:"
 
